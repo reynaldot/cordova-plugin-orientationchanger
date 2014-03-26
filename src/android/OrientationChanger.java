@@ -28,9 +28,17 @@ public class OrientationChanger extends CordovaPlugin {
         if(orientation.equalsIgnoreCase("portrait")) {
           requestOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
         }
+
+        if(orientation.equalsIgnoreCase("reversePortrait")) {
+          requestOrientation = ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT;
+        }
         
         if(orientation.equalsIgnoreCase("landscape")) {
           requestOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
+        }
+
+        if(orientation.equalsIgnoreCase("reverseLandscape")) {
+          requestOrientation = ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE;
         }
 
         if(orientation.equalsIgnoreCase("sensor")) {

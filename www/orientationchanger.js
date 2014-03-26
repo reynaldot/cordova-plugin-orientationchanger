@@ -15,7 +15,7 @@ OrientationChanger.prototype = {
   lockOrientation: function(orientation) {
 
     // Check for valid orientations
-    if(orientation !== 'default' && orientation !== 'landscape' && orientation !== 'portrait' && orientation !== 'sensor')
+    if(orientation !== 'default' && orientation !== 'landscape' && orientation !== 'reverseLandscape' && orientation !== 'portrait' && orientation !== 'reversePortrait' && orientation !== 'sensor')
       return;
 
     activeOrientation = orientation.toLowerCase();
